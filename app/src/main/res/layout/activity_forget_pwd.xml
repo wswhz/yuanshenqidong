@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ForgetPwdActivity">
+    
+    <!--<TextView-->
+    <!--android:id="@+id/textView_ForgetPwd" // 设置TextView的唯一标识符-->
+    <!--        android:layout_width="wrap_content" // 设置宽度为包裹内容-->
+    <!--        android:layout_height="wrap_content" // 设置高度为包裹内容-->
+    <!--        android:layout_marginTop="72dp" // 设置与顶部的边距为72dp-->
+    <!--        android:text="@string/title_ForgetPwd" // 设置文本内容为@string/title_ForgetPwd-->
+    <!--        app:layout_constraintEnd_toEndOf="parent" // 设置右边界与父容器的右边界对齐-->
+    <!--        app:layout_constraintHorizontal_bias="0.498" // 设置水平偏移为0.498（居中对齐）-->
+    <!--        app:layout_constraintStart_toStartOf="parent" // 设置左边界与父容器的左边界对齐-->
+    <!--        app:layout_constraintTop_toTopOf="parent" /> // 设置顶部边界与父容器的顶部对齐-->
+
+    <TextView
+            android:id="@+id/textView_ForgetPwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="72dp"
+            android:text="@string/title_ForgetPwd"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <!--<EditText-->
+    <!--android:id="@+id/editText_inputPhoneNum" // 设置EditText的唯一标识符-->
+    <!--        android:layout_width="wrap_content" // 设置宽度为包裹内容-->
+    <!--        android:layout_height="wrap_content" // 设置高度为包裹内容-->
+    <!--        android:layout_marginTop="76dp" // 设置与顶部的边距为76dp-->
+    <!--        android:drawableLeft="@drawable/phone" // 设置左侧图标为@drawable/phone-->
+    <!--        android:ems="10" // 设置最大字符数为10-->
+    <!--        android:hint="@string/hint_PhoneNum" // 设置占位符文本为@string/hint_PhoneNum-->
+    <!--        android:inputType="textPersonName" // 设置输入类型为人名文本-->
+    <!--        app:layout_constraintEnd_toEndOf="parent" // 设置右边界与父容器的右边界对齐-->
+    <!--        app:layout_constraintHorizontal_bias="0.497" // 设置水平偏移为0.497（居中对齐）-->
+    <!--        app:layout_constraintStart_toStartOf="parent" // 设置左边界与父容器的左边界对齐-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/textView_ForgetPwd" /> // 设置顶部边界与另一个视图（textView_ForgetPwd）的底部对齐-->
+
+    <EditText
+            android:id="@+id/editText_inputPhoneNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="76dp"
+            android:drawableLeft="@drawable/phone"
+            android:ems="10"
+            android:hint="@string/hint_PhoneNum"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_ForgetPwd" />
+
+    <!--<EditText-->
+    <!--android:id="@+id/editText_inputNewPassword" // 设置EditText的唯一标识符-->
+    <!--        android:layout_width="wrap_content" // 设置宽度为包裹内容-->
+    <!--        android:layout_height="wrap_content" // 设置高度为包裹内容-->
+    <!--        android:layout_marginTop="32dp" // 设置与顶部的边距为32dp-->
+    <!--        android:drawableLeft="@drawable/login_icon_password" // 设置左侧图标为@login_icon_password-->
+    <!--        android:ems="10" // 设置最大字符数为10-->
+    <!--        android:hint="@string/hint_NewPwd" // 设置占位符文本为@string/hint_NewPwd-->
+    <!--        android:inputType="textPersonName" // 设置输入类型为人名文本-->
+    <!--        app:layout_constraintEnd_toEndOf="parent" // 设置右边界与父容器的右边界对齐-->
+    <!--        app:layout_constraintHorizontal_bias="0.497" // 设置水平偏移为0.497（居中对齐）-->
+    <!--        app:layout_constraintStart_toStartOf="parent" // 设置左边界与父容器的左边界对齐-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/editText_inputPhoneNum" /> // 设置顶部边界与另一个视图（editText_inputPhoneNum）的底部对齐-->
+
+    <EditText
+            android:id="@+id/editText_inputNewPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:drawableLeft="@drawable/login_icon_password"
+            android:ems="10"
+            android:hint="@string/hint_NewPwd"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText_inputPhoneNum" />
+
+    <!--<Button-->
+    <!--android:id="@+id/button_getVaildNum" // 设置Button的唯一标识符-->
+    <!--        android:layout_width="112dp" // 设置宽度为112dp-->
+    <!--        android:layout_height="44dp" // 设置高度为44dp-->
+    <!--        android:layout_marginTop="-8dp" // 设置与顶部的边距为-8dp-->
+    <!--        android:layout_marginEnd="32dp" // 设置与右侧的边距为32dp-->
+    <!--        android:text="@string/btn_GetValidNum" // 设置按钮文本为@string/btn_GetValidNum-->
+    <!--        app:layout_constraintEnd_toEndOf="parent" // 设置右边界与父容器的右边界对齐-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/editText_inputVaildNum" /> // 设置顶部边界与另一个视图（editText_inputVaildNum）的顶部对齐-->
+    
+    <Button
+            android:id="@+id/button_getVaildNum"
+            android:layout_width="112dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="-8dp"
+            android:layout_marginEnd="32dp"
+            android:text="@string/btn_GetValidNum"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/editText_inputVaildNum" />
+    
+    <!--<TextView-->
+    <!--android:id="@+id/textView_vaildNum" // 设置TextView的唯一标识符-->
+    <!--        android:layout_width="62dp" // 设置宽度为62dp-->
+    <!--        android:layout_height="31dp" // 设置高度为31dp-->
+    <!--        android:layout_marginStart="60dp" // 设置与左侧的边距为60dp-->
+    <!--        android:text="@string/tv_ValidNum" // 设置文本内容为@string/tv_ValidNum-->
+    <!--        app:layout_constraintStart_toStartOf="parent" // 设置左边界与父容器的左边界对齐-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/editText_inputVaildNum" /> // 设置顶部边界与另一个视图（editText_inputVaildNum）的顶部对齐-->
+    
+    <TextView
+            android:id="@+id/textView_vaildNum"
+            android:layout_width="62dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="60dp"
+            android:text="@string/tv_ValidNum"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/editText_inputVaildNum" />
+
+    <!--<EditText-->
+    <!--android:id="@+id/editText_inputVaildNum" // 设置EditText的唯一标识符-->
+    <!--        android:layout_width="145dp" // 设置宽度为145dp-->
+    <!--        android:layout_height="34dp" // 设置高度为34dp-->
+    <!--        android:layout_marginTop="68dp" // 设置与顶部的边距为68dp-->
+    <!--        android:ems="10" // 设置最大字符数为10-->
+    <!--        android:inputType="textPersonName" // 设置输入类型为人名文本-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/button_getVaildNum" // 设置右边界与另一个视图（button_getVaildNum）的左边界对齐-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/textView_vaildNum" // 设置左边界与另一个视图（textView_vaildNum）的右边界对齐-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/editText_inputNewPassword" /> // 设置顶部边界与另一个视图（editText_inputNewPassword）的底部对齐-->
+
+    <EditText
+            android:id="@+id/editText_inputVaildNum"
+            android:layout_width="145dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="68dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toStartOf="@+id/button_getVaildNum"
+            app:layout_constraintStart_toEndOf="@+id/textView_vaildNum"
+            app:layout_constraintTop_toBottomOf="@+id/editText_inputNewPassword" />
+    
+    <!--<Button-->
+    <!--android:id="@+id/button_resetPassword" // 设置Button的唯一标识符-->
+    <!--        android:layout_width="wrap_content" // 设置宽度为包裹内容-->
+    <!--        android:layout_height="wrap_content" // 设置高度为包裹内容-->
+    <!--        android:layout_marginTop="60dp" // 设置与顶部的边距为60dp-->
+    <!--        android:text="@string/btn_ResetPwd" // 设置按钮文本为@string/btn_ResetPwd-->
+    <!--        app:layout_constraintEnd_toEndOf="parent" // 设置右边界与父容器的右边界对齐-->
+    <!--        app:layout_constraintHorizontal_bias="0.498" // 设置水平偏移为0.498（居中对齐）-->
+    <!--        app:layout_constraintStart_toStartOf="parent" // 设置左边界与父容器的左边界对齐-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/editText_inputVaildNum" /> // 设置顶部边界与另一个视图（editText_inputVaildNum）的底部对齐-->
+
+    <Button
+            android:id="@+id/button_resetPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="@string/btn_ResetPwd"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText_inputVaildNum" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

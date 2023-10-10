@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FBFBFB"
+        tools:context=".LoginActivity">
+
+    <!--
+android:layout_width="match_parent" // 设置布局宽度为与父容器匹配
+android:layout_height="match_parent" // 设置布局高度为与父容器匹配
+android:background="#FBFBFB" // 设置背景颜色为#FBFBFB
+tools:context=".LoginActivity"> // 设置用于设计时工具的上下文 
+-->
+
+    <!--    <ImageView
+                android:id="@+id/imgQQ" // 设置ImageView的唯一标识符
+        android:layout_width="105dp" // 设置宽度为105dp
+        android:layout_height="105dp" // 设置高度为105dp
+        android:layout_marginStart="8dp" // 设置与左侧的边距为8dp
+        android:layout_marginTop="50dp" // 设置与顶部的边距为50dp
+        android:layout_marginEnd="8dp" // 设置与右侧的边距为8dp
+        app:layout_constraintEnd_toEndOf="parent" // 设置右边界与父容器的右边界对齐
+        app:layout_constraintStart_toStartOf="parent" // 设置左边界与父容器的左边界对齐
+        app:layout_constraintTop_toTopOf="parent" // 设置顶部边界与父容器的顶部对齐
+        app:srcCompat="@drawable/skin_about_brand" /> // 设置图片资源为@drawable/skin_about_brand
+        -->
+    <ImageView
+            android:id="@+id/imgQQ"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/skin_about_brand" />
+    
+    <!--
+        <LinearLayout
+        android:id="@+id/linearLayout" // 设置LinearLayout的唯一标识符
+        android:layout_width="match_parent" // 设置宽度为与父容器匹配
+        android:layout_height="wrap_content" // 设置高度为包裹内容
+        android:layout_marginStart="24dp" // 设置与左侧的边距为24dp
+        android:layout_marginTop="24dp" // 设置与顶部的边距为24dp
+        android:layout_marginEnd="24dp" // 设置与右侧的边距为24dp
+        android:background="@drawable/input_bg" // 设置背景为@drawable/input_bg
+        android:orientation="vertical" // 设置布局方向为垂直
+        app:layout_constraintEnd_toEndOf="parent" // 设置右边界与父容器的右边界对齐
+        app:layout_constraintStart_toStartOf="parent" // 设置左边界与父容器的左边界对齐
+        app:layout_constraintTop_toBottomOf="@+id/imgQQ"> // 设置顶部边界与另一个视图（imgQQ）的底部对齐
+    -->
+    <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/input_bg"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgQQ">
+        
+        <!--        <EditText
+                        android:id="@+id/etQQName" // 设置EditText的唯一标识符
+                android:layout_width="match_parent" // 设置宽度为与父容器匹配
+                android:layout_height="wrap_content" // 设置高度为包裹内容
+                android:layout_marginLeft="10dp" // 设置与左侧的边距为10dp
+                android:layout_marginRight="10dp" // 设置与右侧的边距为10dp
+                android:drawableStart="@drawable/login_icon_account" // 设置左侧图标为@login_icon_account
+                android:drawablePadding="10dp" // 设置图标与文本之间的间距为10dp
+                android:ems="10" // 设置最大字符数为10
+                android:hint="@string/hint_QQName" // 设置占位符文本为@string/hint_QQName
+                android:inputType="textPersonName" /> // 设置输入类型为人名文本
+                -->
+        <EditText
+                android:id="@+id/etQQName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:drawableStart="@drawable/login_icon_account"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="@string/hint_QQName"
+                android:inputType="textPersonName" />
+        
+        <!--
+                <View
+                        android:layout_width="match_parent" // 设置宽度为与父容器匹配
+                android:layout_height="1dp" // 设置高度为1dp
+                android:layout_marginLeft="10dp" // 设置与左侧的边距为10dp
+                android:layout_marginRight="10dp" // 设置与右侧的边距为10dp
+                android:background="@drawable/base_horization_line" /> // 设置背景为@drawable/base_horization_line
+        -->
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/base_horization_line" />
+
+        <!--        
+        <EditText
+                android:id="@+id/etQQPwd" // 设置EditText的唯一标识符
+                android:layout_width="match_parent" // 设置宽度为与父容器匹配
+                android:layout_height="wrap_content" // 设置高度为包裹内容
+                android:layout_marginLeft="10dp" // 设置与左侧的边距为10dp
+                android:layout_marginRight="10dp" // 设置与右侧的边距为10dp
+                android:drawableStart="@drawable/login_icon_password" // 设置左侧图标为@login_icon_password
+                android:drawablePadding="10dp" // 设置图标与文本之间的间距为10dp
+                android:ems="10" // 设置最大字符数为10
+                android:hint="@string/hint_QQPwd" // 设置占位符文本为@string/hint_QQPwd
+                android:inputType="textPassword" /> // 设置输入类型为密码文本
+                -->
+        <EditText
+                android:id="@+id/etQQPwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:drawableStart="@drawable/login_icon_password"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="@string/hint_QQPwd"
+                android:inputType="textPassword" />
+
+    </LinearLayout>
+
+    <!--
+    <Button
+    android:id="@+id/btnLogin" // 设置Button的唯一标识符
+            style="@style/My_LoginBtn" // 设置按钮的样式
+            android:layout_width="match_parent" // 设置宽度为与父容器匹配
+            android:layout_height="wrap_content" // 设置高度为包裹内容
+            android:layout_marginStart="24dp" // 设置与左侧的边距为24dp
+            android:layout_marginTop="16dp" // 设置与顶部的边距为16dp
+            android:layout_marginEnd="24dp" // 设置与右侧的边距为24dp
+            android:text="@string/btn_Login" // 设置按钮文本为@string/btn_Login
+            app:layout_constraintEnd_toEndOf="parent" // 设置右边界与父容器的右边界对齐
+            app:layout_constraintStart_toStartOf="parent" // 设置左边界与父容器的左边界对齐
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" /> // 设置顶部边界与另一个视图（linearLayout）的底部对齐
+    -->
+    <Button
+            android:id="@+id/btnLogin"
+            style="@style/My_LoginBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/btn_Login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <!--    <CheckBox
+                android:id="@+id/chkRememberPwd" // 设置CheckBox的唯一标识符
+        style="@style/MyCheckBox" // 设置CheckBox的样式
+        android:layout_width="wrap_content" // 设置宽度为包裹内容
+        android:layout_height="wrap_content" // 设置高度为包裹内容
+        android:layout_marginTop="8dp" // 设置与顶部的边距为8dp
+        android:text="@string/chk_RememberPwd" // 设置文本内容为@string/chk_RememberPwd
+        app:layout_constraintStart_toStartOf="@+id/btnLogin" // 设置左边界与另一个视图（btnLogin）的左边界对齐
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin" // 设置顶部边界与另一个视图（btnLogin）的底部对齐
+        android:textColor="#000000" /> // 设置文本颜色为#000000
+        -->
+    <CheckBox
+            android:id="@+id/chkRememberPwd"
+            style="@style/MyCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/chk_RememberPwd"
+            app:layout_constraintStart_toStartOf="@+id/btnLogin"
+            app:layout_constraintTop_toBottomOf="@+id/btnLogin"
+            android:textColor="#000000" />
+
+    <!--    <TextView
+                android:id="@+id/tvForgetPwd" // 设置TextView的唯一标识符
+        style="@style/MyTv_Btn" // 设置TextView的样式
+        android:layout_width="wrap_content" // 设置宽度为包裹内容
+        android:layout_height="wrap_content" // 设置高度为包裹内容
+        android:text="@string/tv_ForgetPwd" // 设置文本内容为@string/tv_ForgetPwd
+        app:layout_constraintBaseline_toBaselineOf="@id/chkRememberPwd" // 设置基线与另一个视图（chkRememberPwd）的基线对齐
+        app:layout_constraintEnd_toEndOf="@+id/btnLogin" // 设置右边界与另一个视图（btnLogin）的右边界对齐
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin" // 设置顶部边界与另一个视图（btnLogin）的底部对齐
+        android:textColor="#000000" /> // 设置文本颜色为#000000
+        -->
+    <TextView
+            android:id="@+id/tvForgetPwd"
+            style="@style/MyTv_Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_ForgetPwd"
+            app:layout_constraintBaseline_toBaselineOf="@id/chkRememberPwd"
+            app:layout_constraintEnd_toEndOf="@+id/btnLogin"
+            app:layout_constraintTop_toBottomOf="@+id/btnLogin"
+            android:textColor="#000000" />
+
+    <!--
+    <TextView
+            android:id="@+id/tvRegistQQ" // 设置TextView的唯一标识符
+    style="@style/MyTv_Btn" // 设置TextView的样式
+    android:layout_width="wrap_content" // 设置宽度为包裹内容
+    android:layout_height="wrap_content" // 设置高度为包裹内容
+    android:layout_marginStart="8dp" // 设置与左侧的边距为8dp
+    android:layout_marginEnd="8dp" // 设置与右侧的边距为8dp
+    android:layout_marginBottom="15dp" // 设置与底部的边距为15dp
+    android:text="@string/tv_RegustQQ" // 设置文本内容为@string/tv_RegustQQ
+    app:layout_constraintBottom_toBottomOf="parent" // 设置底部边界与父容器的底部对齐
+    app:layout_constraintEnd_toEndOf="parent" // 设置右边界与父容器的右边界对齐
+    app:layout_constraintStart_toStartOf="parent" // 设置左边界与父容器的左边界对齐
+    android:textColor="#000000" /> // 设置文本颜色为#000000
+    -->
+    <TextView
+            android:id="@+id/tvRegistQQ"
+            style="@style/MyTv_Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="15dp"
+            android:text="@string/tv_RegustQQ"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="#000000" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

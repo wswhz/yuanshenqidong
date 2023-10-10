@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 定义一个选择器，用于根据不同的状态切换不同的Drawable -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 当按钮被按下（点击）时，使用login_button_press作为背景 -->
+    <item android:state_pressed="true" android:drawable="@drawable/login_button_press"></item>
+
+    <!-- 默认情况下，使用login_button_nor作为背景 -->
+    <item android:drawable="@drawable/login_button_nor"></item>
+
+</selector>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 第一个item元素表示当视图处于被按下（pressed）状态时的颜色 -->
+    <item android:color="#ff0000" android:state_pressed="true"></item>
+
+    <!-- 第二个item元素表示在其他状态下的颜色，这是默认状态 -->
+    <item android:color="#000000"></item>
+</selector>

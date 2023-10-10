@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?> <!-- XML文件声明，指定编码格式为utf-8 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android"> <!-- 定义一个selector，用于选择不同的颜色状态 -->
+    <!-- 定义一个颜色状态，当按下（pressed）时生效 -->
+    <item android:color="#c0c0c0" android:state_pressed="true"></item>
+    <!-- 默认颜色状态，当没有其他状态匹配时生效 -->
+    <item android:color="#ffffff"></item>
+</selector>

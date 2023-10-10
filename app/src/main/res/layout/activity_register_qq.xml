@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterQQ">
+<!--
+android:layout_width="match_parent" // 设置布局宽度为与父容器匹配
+android:layout_height="match_parent" // 设置布局高度为与父容器匹配
+tools:context=".RegisterQQ"> // 设置用于设计时工具的上下文
+-->
+
+
+<!--
+    <TextView
+            android:id="@+id/textView_registerQQ" // 设置TextView的唯一标识符
+    android:layout_width="wrap_content" // 设置宽度为包裹内容
+    android:layout_height="wrap_content" // 设置高度为包裹内容
+    android:layout_marginTop="60dp" // 设置与顶部的边距为60dp
+    android:text="@string/tv_RegisterQQ" // 设置文本内容为@string/tv_RegisterQQ
+    app:layout_constraintEnd_toEndOf="parent" // 设置右边界与父容器的右边界对齐
+    app:layout_constraintStart_toStartOf="parent" // 设置左边界与父容器的左边界对齐
+    app:layout_constraintTop_toTopOf="parent" /> // 设置顶部边界与父容器的顶部对齐
+-->
+    <TextView
+        android:id="@+id/textView_registerQQ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/tv_RegisterQQ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+<!--
+    <TextView
+            android:id="@+id/textView_QQNum" // 设置TextView的唯一标识符
+    android:layout_width="wrap_content" // 设置宽度为包裹内容
+    android:layout_height="wrap_content" // 设置高度为包裹内容
+    android:layout_marginStart="48dp" // 设置与左侧的边距为48dp
+    android:text="@string/tv_QQNum" // 设置文本内容为@string/tv_QQNum
+    app:layout_constraintBaseline_toBaselineOf="@+id/editText_InputQQNum" // 设置文本基线与另一个视图（editText_InputQQNum）的基线对齐
+    app:layout_constraintStart_toStartOf="parent" /> // 设置左边界与父容器的左边界对齐
+-->
+    <TextView
+        android:id="@+id/textView_QQNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:text="@string/tv_QQNum"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editText_InputQQNum"
+        app:layout_constraintStart_toStartOf="parent" />
+
+<!--
+    <TextView
+            android:id="@+id/textView_Password" // 设置TextView的唯一标识符
+    android:layout_width="wrap_content" // 设置宽度为包裹内容
+    android:layout_height="wrap_content" // 设置高度为包裹内容
+    android:text="@string/tv_Password" // 设置文本内容为@string/tv_Password
+    app:layout_constraintBaseline_toBaselineOf="@+id/editText_InputPassword" // 设置文本基线与另一个视图（editText_InputPassword）的基线对齐
+    app:layout_constraintEnd_toEndOf="@+id/textView_Email" // 设置右边界与另一个视图（textView_Email）的右边界对齐
+    app:layout_constraintStart_toStartOf="@+id/textView_Email" /> // 设置左边界与另一个视图（textView_Email）的左边界对齐
+-->
+    <TextView
+        android:id="@+id/textView_Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_Password"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editText_InputPassword"
+        app:layout_constraintEnd_toEndOf="@+id/textView_Email"
+        app:layout_constraintStart_toStartOf="@+id/textView_Email" />
+
+<!--
+    <TextView
+            android:id="@+id/textView_Email" // 设置TextView的唯一标识符
+    android:layout_width="wrap_content" // 设置宽度为包裹内容
+    android:layout_height="wrap_content" // 设置高度为包裹内容
+    android:text="@string/tv_Email" // 设置文本内容为@string/tv_Email
+    app:layout_constraintBaseline_toBaselineOf="@+id/editText_InputEmail" // 设置文本基线与另一个视图（editText_InputEmail）的基线对齐
+    app:layout_constraintEnd_toEndOf="@+id/textView_Sex" // 设置右边界与另一个视图（textView_Sex）的右边界对齐
+    app:layout_constraintStart_toStartOf="@+id/textView_Sex" /> // 设置左边界与另一个视图（textView_Sex）的左边界对齐
+-->
+    <TextView
+        android:id="@+id/textView_Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_Email"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editText_InputEmail"
+        app:layout_constraintEnd_toEndOf="@+id/textView_Sex"
+        app:layout_constraintStart_toStartOf="@+id/textView_Sex" />
+
+<!--
+    <TextView
+            android:id="@+id/textView_Sex" // 设置TextView的唯一标识符
+    android:layout_width="wrap_content" // 设置宽度为包裹内容
+    android:layout_height="wrap_content" // 设置高度为包裹内容
+    android:layout_marginStart="53dp" // 设置与左侧的边距为53dp
+    android:layout_marginTop="49dp" // 设置与顶部的边距为49dp
+    android:text="@string/tv_Sex" // 设置文本内容为@string/tv_Sex
+    app:layout_constraintStart_toStartOf="parent" // 设置左边界与父容器的左边界对齐
+    app:layout_constraintTop_toBottomOf="@+id/editText_InputEmail" /> // 设置顶部边界与另一个视图（editText_InputEmail）的底部对齐
+-->
+    <TextView
+        android:id="@+id/textView_Sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="49dp"
+        android:text="@string/tv_Sex"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_InputEmail" />
+
+<!--
+    <EditText
+            android:id="@+id/editText_InputQQNum" // 设置EditText的唯一标识符
+    android:layout_width="wrap_content" // 设置宽度为包裹内容
+    android:layout_height="wrap_content" // 设置高度为包裹内容
+    android:layout_marginTop="33dp" // 设置与顶部的边距为33dp
+    android:ems="10" // 设置最大字符数为10
+    android:hint="@string/hint_InputQQNum" // 设置占位符文本为@string/hint_InputQQNum
+    android:inputType="textPersonName" // 设置输入类型为人名文本
+    app:layout_constraintEnd_toEndOf="@+id/textView_registerQQ" // 设置右边界与另一个视图（textView_registerQQ）的右边界对齐
+    app:layout_constraintStart_toEndOf="@+id/textView_registerQQ" // 设置左边界与另一个视图（textView_registerQQ）的右边界对齐
+    app:layout_constraintTop_toBottomOf="@+id/textView_registerQQ" /> // 设置顶部边界与另一个视图（textView_registerQQ）的底部对齐
+-->
+    <EditText
+        android:id="@+id/editText_InputQQNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:ems="10"
+        android:hint="@string/hint_InputQQNum"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/textView_registerQQ"
+        app:layout_constraintStart_toEndOf="@+id/textView_registerQQ"
+        app:layout_constraintTop_toBottomOf="@+id/textView_registerQQ" />
+    
+<!--
+    <EditText
+            android:id="@+id/editText_InputPassword" // 设置EditText的唯一标识符
+    android:layout_width="wrap_content" // 设置宽度为包裹内容
+    android:layout_height="wrap_content" // 设置高度为包裹内容
+    android:layout_marginTop="22dp" // 设置与顶部的边距为22dp
+    android:ems="10" // 设置最大字符数为10
+    android:hint="@string/hint_InputPassword" // 设置占位符文本为@string/hint_InputPassword
+    android:inputType="textPersonName" // 设置输入类型为人名文本
+    app:layout_constraintStart_toStartOf="@+id/editText_InputQQNum" // 设置左边界与另一个视图（editText_InputQQNum）的左边界对齐
+    app:layout_constraintTop_toBottomOf="@+id/editText_InputQQNum" /> // 设置顶部边界与另一个视图（editText_InputQQNum）的底部对齐
+-->
+    <EditText
+        android:id="@+id/editText_InputPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="@string/hint_InputPassword"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/editText_InputQQNum"
+        app:layout_constraintTop_toBottomOf="@+id/editText_InputQQNum" />
+
+<!--
+    <EditText
+            android:id="@+id/editText_InputEmail" // 设置EditText的唯一标识符
+    android:layout_width="wrap_content" // 设置宽度为包裹内容
+    android:layout_height="wrap_content" // 设置高度为包裹内容
+    android:layout_marginTop="14dp" // 设置与顶部的边距为14dp
+    android:ems="10" // 设置最大字符数为10
+    android:hint="@string/hint_InputEmail" // 设置占位符文本为@string/hint_InputEmail
+    android:inputType="textPersonName" // 设置输入类型为人名文本
+    app:layout_constraintStart_toStartOf="@+id/editText_InputPassword" // 设置左边界与另一个视图（editText_InputPassword）的左边界对齐
+    app:layout_constraintTop_toBottomOf="@+id/editText_InputPassword" /> // 设置顶部边界与另一个视图（editText_InputPassword）的底部对齐
+-->
+    <EditText
+        android:id="@+id/editText_InputEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="@string/hint_InputEmail"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/editText_InputPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editText_InputPassword" />
+    
+<!--
+    <Button
+            android:id="@+id/btn_RegisterQQ" // 设置Button的唯一标识符
+    android:layout_width="wrap_content" // 设置宽度为包裹内容
+    android:layout_height="wrap_content" // 设置高度为包裹内容
+    android:layout_marginTop="38dp" // 设置与顶部的边距为38dp
+    android:text="@string/btn_RegisterQQ" // 设置按钮文本为@string/btn_RegisterQQ
+    app:layout_constraintEnd_toEndOf="parent" // 设置右边界与父容器的右边界对齐
+    app:layout_constraintStart_toStartOf="parent" // 设置左边界与父容器的左边界对齐
+    app:layout_constraintTop_toBottomOf="@+id/radioGroup" /> // 设置顶部边界与另一个视图（radioGroup）的底部对齐
+-->
+    <Button
+        android:id="@+id/btn_RegisterQQ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:text="@string/btn_RegisterQQ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+<!--
+    <RadioGroup
+            android:id="@+id/radioGroup" // 设置RadioGroup的唯一标识符
+    android:layout_width="0dp" // 设置宽度为0dp，自动填充剩余空间
+    android:layout_height="56dp" // 设置高度为56dp
+    android:layout_marginEnd="2dp" // 设置与右侧的边距为2dp
+    android:orientation="horizontal" // 设置为水平方向布局
+    app:layout_constraintBottom_toBottomOf="@+id/textView_Sex" // 设置底部边界与另一个视图（textView_Sex）的底部对齐
+    app:layout_constraintEnd_toEndOf="@+id/btn_RegisterQQ" // 设置右边界与另一个视图（btn_RegisterQQ）的右边界对齐
+    app:layout_constraintStart_toStartOf="@+id/editText_InputEmail" // 设置左边界与另一个视图（editText_InputEmail）的左边界对齐
+    app:layout_constraintTop_toBottomOf="@+id/textView_Sex"> // 设置顶部边界与另一个视图（textView_Sex）的底部对齐
+-->
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="2dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_Sex"
+        app:layout_constraintEnd_toEndOf="@+id/btn_RegisterQQ"
+        app:layout_constraintStart_toStartOf="@+id/editText_InputEmail"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Sex">
+        
+<!--
+        <RadioButton
+                android:id="@+id/radioButton" // 设置RadioButton的唯一标识符
+        android:layout_width="wrap_content" // 设置宽度为包裹内容
+        android:layout_height="wrap_content" // 设置高度为包裹内容
+        android:checked="true" // 设置默认选中
+        android:text="男" /> // 设置文本内容为"男"
+-->
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="男" />
+
+<!--        <RadioButton
+                android:id="@+id/radioButton2" // 设置RadioButton的唯一标识符
+        android:layout_width="wrap_content" // 设置宽度为包裹内容
+        android:layout_height="wrap_content" // 设置高度为包裹内容
+        android:text="女" /> // 设置文本内容为"女"
+        -->
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="女" />
+
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

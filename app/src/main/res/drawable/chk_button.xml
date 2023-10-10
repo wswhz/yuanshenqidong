@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 创建一个选择器（selector）XML文件，用于不同状态下的图像切换 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android"> 
+    <!-- 当控件的状态为"checked"（选中）时，使用名为@drawable/checkbox_selected的图像资源 -->
+    <item android:state_checked="true" android:drawable="@drawable/checkbox_selected"></item>
+    <!-- 在所有其他状态下，使用名为@drawable/checkbox_unselect的图像资源 -->
+    <item android:drawable="@drawable/checkbox_unselect"></item>
+</selector>
